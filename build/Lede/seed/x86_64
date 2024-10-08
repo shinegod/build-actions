@@ -2,11 +2,13 @@ CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
 CONFIG_GRUB_IMAGES=y
+CONFIG_HTOP_LMSENSORS=y
 CONFIG_PACKAGE_TAR_BZIP2=y
 CONFIG_PACKAGE_TAR_GZIP=y
 CONFIG_PACKAGE_TAR_XZ=y
 CONFIG_PACKAGE_TAR_ZSTD=y
 CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_blkid=y
 CONFIG_PACKAGE_bzip2=y
 # CONFIG_PACKAGE_chinadns-ng is not set
 CONFIG_PACKAGE_collectd=y
@@ -25,16 +27,34 @@ CONFIG_PACKAGE_cups=y
 # CONFIG_PACKAGE_dns2socks is not set
 # CONFIG_PACKAGE_dns2tcp is not set
 CONFIG_PACKAGE_dnsforwarder=y
+CONFIG_PACKAGE_dnsmasq_full_auth=y
+CONFIG_PACKAGE_dnsmasq_full_broken_rtc=y
+CONFIG_PACKAGE_dnsmasq_full_conntrack=y
+CONFIG_PACKAGE_dnsmasq_full_dnssec=y
+CONFIG_PACKAGE_dnsmasq_full_nftset=y
+CONFIG_PACKAGE_dnsmasq_full_noid=y
 CONFIG_PACKAGE_dnsproxy=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_iputils-arping=y
+CONFIG_PACKAGE_istoreenhance=y
+CONFIG_PACKAGE_jansson=y
+CONFIG_PACKAGE_jq=y
+CONFIG_PACKAGE_kmod-crypto-acompress=y
+# CONFIG_PACKAGE_kmod-fast-classifier is not set
 CONFIG_PACKAGE_kmod-inet-diag=y
 CONFIG_PACKAGE_kmod-ipt-offload=y
+CONFIG_PACKAGE_kmod-lib-lzo=y
+CONFIG_PACKAGE_kmod-lib-zlib-deflate=y
 CONFIG_PACKAGE_kmod-md-mod=y
 CONFIG_PACKAGE_kmod-md-raid0=y
 CONFIG_PACKAGE_kmod-md-raid1=y
 CONFIG_PACKAGE_kmod-md-raid10=y
+CONFIG_PACKAGE_kmod-md-raid456=y
 CONFIG_PACKAGE_kmod-nf-flow=y
+CONFIG_PACKAGE_kmod-nf-log6=y
+CONFIG_PACKAGE_kmod-nf-reject6=y
+CONFIG_PACKAGE_kmod-nft-core=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
-# CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
 CONFIG_PACKAGE_libbz2=y
 CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
@@ -46,12 +66,15 @@ CONFIG_PACKAGE_libcupsppdc=y
 # CONFIG_PACKAGE_libev is not set
 CONFIG_PACKAGE_libffi=y
 CONFIG_PACKAGE_libgdbm=y
+CONFIG_PACKAGE_libiperf3=y
 CONFIG_PACKAGE_libjpeg-turbo=y
 CONFIG_PACKAGE_libltdl=y
 CONFIG_PACKAGE_liblzma=y
 # CONFIG_PACKAGE_libmbedtls is not set
+CONFIG_PACKAGE_libnetfilter-conntrack=y
 CONFIG_PACKAGE_libnetsnmp=y
-# CONFIG_PACKAGE_libopenssl-legacy is not set
+CONFIG_PACKAGE_libnfnetlink=y
+CONFIG_PACKAGE_libnftnl=y
 CONFIG_PACKAGE_libparted=y
 # CONFIG_PACKAGE_libpcre2 is not set
 CONFIG_PACKAGE_libpng=y
@@ -62,6 +85,7 @@ CONFIG_PACKAGE_libruby=y
 CONFIG_PACKAGE_libsqlite3=y
 CONFIG_PACKAGE_libstdcpp=y
 # CONFIG_PACKAGE_libudns is not set
+CONFIG_PACKAGE_libusb-1.0=y
 CONFIG_PACKAGE_libyaml=y
 CONFIG_PACKAGE_libzstd=y
 CONFIG_PACKAGE_lsblk=y
@@ -72,17 +96,22 @@ CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-app-cpulimit=y
 CONFIG_PACKAGE_luci-app-cupsd=y
 # CONFIG_PACKAGE_luci-app-ddns is not set
+CONFIG_PACKAGE_luci-app-diag-core=y
+CONFIG_PACKAGE_luci-app-diskman=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linear=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_mdadm=y
+CONFIG_PACKAGE_luci-app-istoreenhance=y
 CONFIG_PACKAGE_luci-app-istorex=y
 CONFIG_PACKAGE_luci-app-openclash=y
-# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Haproxy is not set
-# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client is not set
-# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client is not set
-# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Simple_Obfs is not set
-# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_SingBox is not set
-# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Plugin is not set
 CONFIG_PACKAGE_luci-app-quickstart=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+CONFIG_PACKAGE_luci-app-serverchan=y
+CONFIG_PACKAGE_luci-app-smartdns=y
+CONFIG_PACKAGE_luci-app-smartinfo=y
 # CONFIG_PACKAGE_luci-app-ssr-plus is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_MosDNS is not set
@@ -99,7 +128,12 @@ CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING=y
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-cpulimit-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-diag-core-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-diskman-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-istoreenhance-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-quickstart-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-smartinfo-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-statistics-zh-cn=y
 CONFIG_PACKAGE_luci-lib-taskd=y
 CONFIG_PACKAGE_luci-lib-xterm=y
@@ -109,6 +143,7 @@ CONFIG_PACKAGE_mdadm=y
 # CONFIG_PACKAGE_microsocks is not set
 # CONFIG_PACKAGE_miniupnpd is not set
 # CONFIG_PACKAGE_mosdns is not set
+CONFIG_PACKAGE_nftables-json=y
 CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_parted=y
 CONFIG_PACKAGE_python-pip-conf=y
@@ -125,6 +160,7 @@ CONFIG_PACKAGE_python3-dev=y
 CONFIG_PACKAGE_python3-dev-src=y
 CONFIG_PACKAGE_python3-distutils=y
 CONFIG_PACKAGE_python3-email=y
+CONFIG_PACKAGE_python3-iperf3=y
 CONFIG_PACKAGE_python3-lib2to3=y
 CONFIG_PACKAGE_python3-light=y
 CONFIG_PACKAGE_python3-logging=y
@@ -202,6 +238,7 @@ CONFIG_PACKAGE_shadow-vipw=y
 # CONFIG_PACKAGE_shadowsocksr-libev-ssr-server is not set
 # CONFIG_PACKAGE_simple-obfs is not set
 CONFIG_PACKAGE_smartd=y
+CONFIG_PACKAGE_smartdns=y
 CONFIG_PACKAGE_smartmontools=y
 CONFIG_PACKAGE_snmpd=y
 CONFIG_PACKAGE_tar=y
